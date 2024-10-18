@@ -1,12 +1,13 @@
-$(document).ready(function() {
-  const openMenu = () => {
-    $('.absolute').removeClass('hidden');
-  };
+$(document).ready(function(){
+  $("#navbar").load("components/navbar.html", function() {
 
-  const closeMenuHandler = () => {
-    $('.absolute').addClass('hidden');
-  };
+    $('#hamburger').on('click', function() {
+      $('#mobile-menu').removeClass('hidden');
+    });
 
-  $('.fa-bars').on('click', openMenu);
-  $('.fa-times').on('click', closeMenuHandler);
+    $('#close-menu').on('click', function() {
+      $('#mobile-menu').addClass('hidden');
+    });
+    
+  });
 });

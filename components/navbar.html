@@ -1,0 +1,47 @@
+<nav class="fixed w-full flex justify-between items-center md:pl-16 pl-8 shadow-md">
+  <!-- Logo -->
+  <a href="/" class="font-bold text-xl cursor-pointer">mealapp</a>
+
+  <!-- Desktop Menu -->
+  <ul class="hidden md:flex py-5 items-center text-sm cursor-pointer mr-10">
+    <li>
+      <a href="/" class="px-6 py-5 hover:bg-gray-200">Home</a>
+    </li>
+    <li>
+      <a href="/" class="px-6 py-5 hover:bg-gray-200">Foods</a>
+    </li>
+    <li>
+      <a href="/" class="px-6 py-5 hover:bg-gray-200">Ingredients</a>
+    </li>
+    <li>
+      <a href="/" class="px-6 py-5 hover:bg-gray-200">Local Culinary</a>
+    </li>
+  </ul>
+
+  <!-- Mobile Menu -->
+  <div class="md:hidden cursor-pointer py-3 md:mr-16 mr-6">
+    <i class="fa-solid fa-bars p-2 text-2xl" id="hamburger"></i>
+
+    <div class="absolute top-0 left-0 bg-white w-screen h-screen hidden" id="mobile-menu">
+      <div class="absolute right-0 top-0 mr-6 my-3">
+        <i class="fa-solid fa-times p-2 text-2xl cursor-pointer" id="close-menu"></i>
+      </div>
+
+      <ul class="w-full h-full flex flex-col items-center justify-center">
+        <li class="py-3">
+          <a href="/" class="py-3 px-5 hover:bg-gray-200">Home</a>
+        </li>
+        <li class="py-3">
+          <a href="/" class="py-3 px-5 hover:bg-gray-200">Foods</a>
+        </li>
+        <li class="py-3">
+          <a href="/" class="py-3 px-5 hover:bg-gray-200">Ingredients</a>
+        </li>
+        <li class="py-3">
+          <a href="/" class="py-3 px-5 hover:bg-gray-200">Local Culinary</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+</nav>
