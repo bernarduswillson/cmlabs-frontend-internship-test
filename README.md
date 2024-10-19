@@ -3,7 +3,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <img src="public/favicon.ico" alt="Logo" width="80" height="80">
+  <img src="assets/logo/favicon.ico" alt="Logo" width="80" height="80">
 
   <h3 align="center">MealApp</h3>
 
@@ -41,9 +41,9 @@
 
 <!-- ABOUT THE PROJECT -->
 ## About The Project
-![Preview of the application](public/images/categories.jpg)
-![Preview of the application](public/images//meals.jpg)
-![Preview of the application](public/images//detail.jpg)
+![Preview of the application](assets/images/categories.jpg)
+![Preview of the application](assets/images//meals.jpg)
+![Preview of the application](assets/images//detail.jpg)
 
 MealApp is a web application that allows users to explore and discover various food categories and detailed meal recipes from around the world. It provides an easy-to-navigate platform with visual meal cards, dynamic category browsing, and interactive meal details.
 
