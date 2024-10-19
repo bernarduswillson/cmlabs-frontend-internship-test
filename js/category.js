@@ -8,8 +8,6 @@ $(document).ready(function () {
     path: '../assets/animations/spinner-loading.json'
   });
   
-  var categoryListTitle = $("#categoryList");
-
   $.ajax({
     url: "https://www.themealdb.com/api/json/v1/1/categories.php",
     method: "GET",
@@ -30,7 +28,7 @@ $(document).ready(function () {
     },
 
     error: function () {
-      categoryListTitle.text("Failed to load categories.");
+      $("#categoryList").text("Failed to load categories.");
     },
 
     complete: function () {

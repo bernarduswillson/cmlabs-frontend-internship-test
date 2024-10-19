@@ -18,6 +18,12 @@ $(document).ready(function () {
       i: mealId
     },
     success: function (response) {
+      if (response.meals === null) {
+        $('#mealDetail').attr('style', 'text-align: center; padding: 20px;');
+        $('#mealDetail').text("Meal not found.");
+        return;
+      }
+      
       var meal = response.meals[0];
 
       $('#categoryName').text(meal.strCategory);
@@ -58,7 +64,8 @@ $(document).ready(function () {
     },
 
     error: function () {
-      // $('#mealTitle').text("Failed to load meals.");
+      $('#mealDetail').attr('style', 'text-align: center; padding: 20px;');
+      $('#mealDetail').text("Failed to load meals.");
     },
 
     complete: function () {

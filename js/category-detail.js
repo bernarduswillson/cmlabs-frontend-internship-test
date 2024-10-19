@@ -21,7 +21,12 @@ $(document).ready(function () {
       c: categoryName
     },
     success: function (response) {
-      console.log(response);
+      if (response.meals === null) {
+        $('#categoryDetail').attr('style', 'text-align: center; padding: 20px;');
+        $('#categoryDetail').text("Category not found.");
+        return;
+      }
+
       $.each(response.meals, function (index, meal) {
         var mealCard = $('<div></div>').load('components/meal-card.html', function () {
           mealCard.find('#mealImage').attr('src', meal.strMealThumb);
@@ -38,7 +43,7 @@ $(document).ready(function () {
     },
 
     error: function () {
-      $('#mealTitle').text("Failed to load meals.");
+      $('#mealList').text("Failed to load meals.");
     },
 
     complete: function () {
