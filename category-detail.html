@@ -24,28 +24,30 @@
   <!-- Navigation -->
   <div id="navbar"></div>
 
-  <!-- Content -->
-   <div class="container mx-auto px-9 my-8 py-8 relative max-w-6xl">
-    <!-- Breadcrumb -->
-    <div class="flex items-center gap-2 mb-5">
-      <i class="fa-solid fa-house text-sm"></i>
-      <a href="/" class="text-md">Home</a>
-      <i class="fa-solid fa-chevron-right text-gray-400 text-sm mx-2"></i>
-      <h1 class="text-md" id="categoryName"></h1>
+  <main>
+    <!-- Content -->
+    <div class="container mx-auto px-9 my-8 py-8 mb-20 relative max-w-6xl">
+      <!-- Breadcrumb -->
+      <div class="flex items-center gap-2 mb-5">
+        <i class="fa-solid fa-house text-sm"></i>
+        <a href="/" class="text-md">Home</a>
+        <i class="fa-solid fa-chevron-right text-gray-400 text-sm mx-2"></i>
+        <h1 class="text-md" id="categoryName"></h1>
+      </div>
+
+      <!-- Category Title -->
+      <h1 class="text-4xl font-bold" id="categoryTitle"></h1>
+      <div class="mt-10 w-full h-1 bg-black bg-gray-100"></div>
+
+      <!-- Meal List -->
+      <div id="mealList" class="flex flex-wrap gap-5 justify-center items-center mt-10"></div>
+
+      <!-- Loader -->
+      <div id="lottieLoader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
+        <div id="lottieAnimation" style="width: 200px; height: 200px;"></div>
+      </div>
     </div>
-
-    <!-- Category Title -->
-    <h1 class="text-4xl font-bold" id="categoryTitle"></h1>
-    <div class="mt-10 w-full h-1 bg-black bg-gray-100"></div>
-
-    <!-- Meal List -->
-    <div id="mealList" class="flex flex-wrap gap-5 justify-center items-center mt-10"></div>
-
-    <!-- Loader -->
-    <div id="lottieLoader" class="fixed inset-0 flex items-center justify-center bg-white z-50">
-      <div id="lottieAnimation" style="width: 200px; height: 200px;"></div>
-    </div>
-   </div>
+  </main>
 
   <!-- Scripts -->
   <script src="js/navbar.js"></script>
